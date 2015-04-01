@@ -15,16 +15,34 @@
    
 </head> 
 
+	<script>
+        $( ".openLinks" ).click(function(a) {
+          $(".Links").show(1000);
+          a.preventDefault();
+        });
+
+        $( ".closeLinks" ).click(function(a) {
+          $(".Links").hide(1000);
+          a.preventDefault();
+        });
+	</script>
+
 <div id= "home" data role="page">
 
 	<div data-role="content">
+		 <div class="Menu">
+		 <li><a href="" class="openLinks">Menu</a></li>
 
- 		<div class="Navigation">
- 			<ul data-role="listview" data-inset="true">
+		 </div>
+
+ 		<div class="Links">
+ 			<ul data-inset="true">
  				<li><a href="#Home">Homepage</a></li>
  				<li><a href="#Register">Register</a></li>
  				<li><a href="#ByGenre">Genre</a></li>
 				<li><a href="#ByAge">Age</a></li>
+				<li><a href="" class="closeLinks">close</a></li>
+
  			</ul>
  		</div>
  		<div class="Featured">
