@@ -15,25 +15,10 @@
    
 </head> 
 
-	<script>
-        $( ".openLinks" ).click(function(a) {
-          $(".Links").show(1000);
-          a.preventDefault();
-        });
-
-        $( ".closeLinks" ).click(function(a) {
-          $(".Links").hide(1000);
-          a.preventDefault();
-        });
-	</script>
 
 <div id= "home" data role="page">
 
 	<div data-role="content">
-		 <div class="Menu">
-		 <li><a href="" class="openLinks">Menu</a></li>
-
-		 </div>
 
  		<div class="Links">
  			<ul data-inset="true">
@@ -45,6 +30,10 @@
 
  			</ul>
  		</div>
+ 				 <div class="Menu">
+		 <li><a href="" class="openLinks">Menu</a></li>
+
+		 </div>
  		<div class="Featured">
  			<h2>Featured this month</h2>
  			<div class="game">
@@ -134,4 +123,17 @@
 <div data-role="footer">
 </div>
 
+	<script>
+        $( ".openLinks" ).click(function(a) {
+        	console.log("your message here");
+          $(".Links").show(1000);
+          a.preventDefault();
+        });
+
+        $( ".closeLinks" ).click(function(a) {
+          $(".Links").hide(1000);
+          a.preventDefault();
+        });
+	</script>
 </html>
+

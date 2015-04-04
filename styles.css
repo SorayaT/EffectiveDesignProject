@@ -32,6 +32,7 @@ h2{
 
 .Links ul li{
 	list-style: none;
+
 }
 
 .Links ul li a{
@@ -39,10 +40,15 @@ h2{
 	display:block;
 	text-align: center;
 	margin-bottom:10px;
+			color:black;
+
 }
 .Links ul li a:hover{
 	background-color: blue;
 }
 .ui-content{
 	padding:0;
+}
+.Menu li{
+	list-style: none;
 }
