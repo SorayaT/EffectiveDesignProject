@@ -82,6 +82,12 @@ a.closeLinks.ui-link {
 	width: 25%;
 	height: 25%;
 }
+.openmenu {
+	padding-left: 10px;
+	width: 10%;
+	height: 10%;
+}
+
 
 #ul.menu {
 }
