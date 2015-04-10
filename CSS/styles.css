@@ -1,3 +1,9 @@
+
+#logo {
+	max-width:20%;
+	max-height: 20%;
+}
+
 ul#menu {
     list-style: none outside none; 
     margin:0; 
@@ -5,6 +11,11 @@ ul#menu {
     text-align: center;
     background-color: black;
 }
+
+.ui-page { 
+background:#E6E6E6;
+}
+
 
 }
 #menu li {
