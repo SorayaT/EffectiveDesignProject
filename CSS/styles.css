@@ -1,6 +1,10 @@
 .ui-body-c .ui-link {
 	  color: black;
 }
+#genre {
+	z-index: 99;
+	
+}
 #logo {
 	max-width:20%;
 	max-height: 20%;
