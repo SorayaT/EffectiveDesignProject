@@ -26,9 +26,9 @@
 
  		<div class="Links">
  			<ul data-inset="true">
- 				<li><a href="#Home">Homepage</a></li>
+ 				<li><a href="#home">Homepage</a></li>
  				<li><a href="#index">Logo</a></li>
- 				<li><a href="#ByGenre">Genre</a></li>
+ 				<li><a href="#genres">Genre</a></li>
 				<li><a href="#ByAge">Age</a></li>
 				<li><a href="#two">Test</a></li>
 				<li><a href="" class="closeLinks"><img src="img/close-icon.png" class="closeimg"></a></li>
@@ -37,7 +37,7 @@
  		</div>
  				 <div class="Menu">
  	<ul id="menu">
-		 <li><a href="" class="openLinks" style="color: white;"><img src="img/menu.bmp" class="openmenu"></a></li>
+		 <li><a href="#genres" class="openLinks" style="color: white;"><img src="img/menu.bmp" class="openmenu"></a></li>
 
 		 <li>
          <a href="" class="openLinks" style="color: white;"><img src="img/profile_small.png" class="openmenu"></a></li>
@@ -48,20 +48,14 @@
     </ul>
     </div>
 
-    	<script>
-        $( ".openLinks" ).click(function(a) {
-        	console.log("your message here");
-          $(".Links").show(1000);
-          a.preventDefault();
-        });
 
-        $( ".closeLinks" ).click(function(a) {
-          $(".Links").hide(1000);
-          a.preventDefault();
-        });
-	</script>
+<img src="img/untitled.png" id="logo"> 
 
-<img src="img/logo4.png" id="logo"> 
+
+</div><!-- /page -->
+
+
+<div data role="page" id="genres">
 
  		<div class="homePreviews">
  			<h2>Featured this month</h2>
@@ -145,9 +139,8 @@
  			</div>
  		</div>
 
- 	</div><!-- /page -->
 
-
+</div><!-- /page -->
 
 <!--
 <div id="two" data-role="page">
