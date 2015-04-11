@@ -3,12 +3,22 @@
 	max-width:20%;
 	max-height: 20%;
 	text-align: center;
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
+	display: inline-block;
     vertical-align: middle;
-  text-align: center;
+    text-align: center;
+    float: left; 
+    padding-left:2%;
+    margin: 0 auto;
 }
+
+#logo {
+  transition:all 2s;
+  -webkit-transition: all 2s;
+}
+.rotate{
+  transform: rotate(360deg);
+}
+
 
 ul#menu {
     list-style: none outside none; 
@@ -59,7 +69,7 @@ h2{
 	font-size: 24px;
 	letter-spacing: 0.5px;
 	position: absolute;
-	background: rgba(54, 25, 25, .7);
+	background: rgba(40, 110, 113, 0.9);
 	width: 100%;
 	height: 100%;
 	display: none;
@@ -83,7 +93,6 @@ h2{
 	width: 100%;
 	padding-bottom: 30px;
 	display:block;
-	margin-bottom:10px;
 	color:black;
 
 }
@@ -107,7 +116,8 @@ h2{
 }
 
 a.closeLinks.ui-link {
-	padding-top: 200px;
+	background: rgba(40, 110, 113, 0.9);
+
 
 }
 .closelinks {

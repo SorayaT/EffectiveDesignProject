@@ -1,5 +1,6 @@
 
 <!DOCTYPE html>
+<html>
 <head>
 
     <title>Page Title</title> 
@@ -18,25 +19,25 @@
 </head> 
 
     
-<body class="ui-mobile-viewport ui-overlay-c"> 
+<body> 
 
 <!-- Start of first page: #one -->
 <div data role="page" id="home">
 
-<script type="text/javascript">
-    $(document).ready(function(){
-        $('#menu').('navbar.html');
-    });
-</script>
-
+<div data-role="content">
 
         <div class="Links">
             <ul data-inset="true">
                 <li><a href="#home">Homepage</a></li>
-                <li><a href="#i">Logo</a></li>
-                <li><a href="#genre">Genre</a></li>
-                <li><a href="#ByAge">Age</a></li>
-                <li><a href="#two">Test</a></li>
+                <li><a href="#news">Gaming NEWS</a></li>
+                <li><a href="#search">Search Games</a></li>
+                <li><a href="#genre">Games Genre List</a></li>
+                <li><a href="#ByAge">Games by Age</a></li>
+                <li><a href="#rated">Top Rated</a></li>
+                <li><a href="#featured">Featured Games</a></li>
+                <li><a href="#new">NEW Additions</a></li>
+                <li><a href="#about">About US</a></li>
+                <li><a href="#contact">Contact US</a></li>
                 <li><a href="" class="closeLinks"><img src="img/close-icon.png" class="closeimg"></a></li>
 
             </ul>
@@ -70,10 +71,22 @@
         $(".Links").hide(1000);
         });
     </script>
+<style>
+</style>
+<img src="img/untitled.png" id="logo" width="20%"> 
+<h2 style="display: inline-block; padding:2%;"> New Arrivals</h2>
 
-<img src="img/untitled.png" id="logo"> 
+<script>
+$("#logo").on('click', function() {
+  $(this).toggleClass('rotate');
+});
+
+</script>
+
+<!-- SLIDERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR -->
 
 
+</div>
 </div><!-- /page -->
 
 
@@ -211,5 +224,8 @@
         <h4 class="ui-title" role="heading" aria-level="1">Page Footer</h4>
     </div><!-- /footer -->
 </div><!-- /page two -->
+
+</body>
+</html>
 
 
