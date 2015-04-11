@@ -1,17 +1,12 @@
-
 <!DOCTYPE html>
+<html>
 <head>
 
     <title>Page Title</title> 
-    
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
-
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
     <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>
-    
-
-
     <link rel="stylesheet" href="css/styles.css">
    
    
@@ -20,71 +15,15 @@
     
 <body class="ui-mobile-viewport ui-overlay-c"> 
 
-<!-- Start of first page: #one -->
-<div data role="page" id="home">
-
-<script type="text/javascript">
-    $(document).ready(function(){
-        $('#menu').('navbar.html');
-    });
-</script>
 
 
-        <div class="Links">
-            <ul data-inset="true">
-                <li><a href="#home">Homepage</a></li>
-                <li><a href="#i">Logo</a></li>
-                <li><a href="#genre">Genre</a></li>
-                <li><a href="#ByAge">Age</a></li>
-                <li><a href="#two">Test</a></li>
-                <li><a href="" class="closeLinks"><img src="img/close-icon.png" class="closeimg"></a></li>
-
-            </ul>
-        </div>
-                 <div class="Menu">
-    <ul id="menu">
-         <li><a href="" class="openLinks" style="color: white;"><img src="img/menu.bmp" class="openmenu"></a></li>
-
-         <li>
-         <a href="" class="openLinks" style="color: white;"><img src="img/profile_small.png" class="openmenu"></a></li>
-
-
-         <li><a href="" class="openLinks" style="color: white;"><img src="img/Shopping_small.jpg" class="openmenu"></a></li>
-
-    </ul>
-    </div>
-
-           <script>
-        $( ".openLinks" ).click(function(a) {
-            console.log("your message here");
-          $(".Links").show(1000);
-          a.preventDefault();
-        });
-
-        $( ".closeLinks" ).click(function(a) {
-          $(".Links").hide(1000);
-          a.preventDefault();
-        });
-
-        $(".Links").click(function () {
-        $(".Links").hide(1000);
-        });
-    </script>
-
-<img src="img/untitled.png" id="logo"> 
-
-
-</div><!-- /page -->
-
-
-
-<!-- Start of second page: #two -->
-<div data-role="page" id="genre" data-theme="a" data-url="two" tabindex="0" class="ui-page ui-body-a" style="min-height: 417px;">
+<!-- Start of second page: #genre -->
+<div id="genre" data-theme="a" data-url="two" tabindex="0" class="ui-page ui-body-a" style="min-height: 417px;">
 <div class="Links">
             <ul data-inset="true">
-                <li><a href="#home">Homepage</a></li>
+                <li><a href="index.html">Homepage</a></li>
                 <li><a href="#index">Logo</a></li>
-                <li><a href="#genre">Genre</a></li>
+                <li><a href="genre.html">Genre</a></li>
                 <li><a href="#ByAge">Age</a></li>
                 <li><a href="#two">Test</a></li>
                 <li><a href="" class="closeLinks"><img src="img/close-icon.png" class="closeimg"></a></li>
@@ -203,6 +142,7 @@
             <img src="http://www.screenshotsaturday.com/images/directlink_CBx2iJpW8AE_6rs.png%3Alarge.png">
             </div>
         </div>
+
    
         
 
@@ -210,6 +150,8 @@
     <div data-role="footer" class="ui-footer ui-bar-a" role="contentinfo">
         <h4 class="ui-title" role="heading" aria-level="1">Page Footer</h4>
     </div><!-- /footer -->
+
 </div><!-- /page two -->
 
-
+</body>
+</html>
