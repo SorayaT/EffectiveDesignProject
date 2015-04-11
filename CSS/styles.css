@@ -1,4 +1,6 @@
-
+.ui-body-c .ui-link {
+	  color: black;
+}
 #logo {
 	max-width:20%;
 	max-height: 20%;
@@ -42,8 +44,8 @@ background:#E6E6E6;
 }
 
 .game{
-  width: 6em;
-  height: 3em;
+  width: 9em;
+  height: 4.5em;
   margin: 1%;
   background-color: grey;
   display: inline-block;
@@ -59,7 +61,7 @@ background:#E6E6E6;
 h2{
 	clear:left;
 }
-.Links{
+.Links {
 	display: block;
 	text-align: center;
 	text-decoration: none;
@@ -73,9 +75,38 @@ h2{
 	width: 100%;
 	height: 100%;
 	display: none;
+    left: 0px;
+    top: 0px;
+    z-index: 100;
+}
+.Links2 {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 24px;
+	letter-spacing: 0.5px;
+	position: absolute;
+	background: rgba(40, 110, 113, 0.9);
+	width: 100%;
+	height: 100%;
+	display: none;
+    left: 0px;
+    top: 0px;
+    z-index: 100;
 }
 
+
+
 .Links ul{
+	padding:0;
+	vertical-align: bottom;
+
+}
+
+.Links2 ul{
 	padding:0;
 	vertical-align: bottom;
 
@@ -87,6 +118,15 @@ h2{
 
 }
 
+.Links2 ul li{
+	list-style: none;
+    text-align: center;
+
+}
+a {
+	text-decoration: none;
+}
+
 .Links ul li a{
 	float: left;
 	clear: both;
@@ -96,6 +136,16 @@ h2{
 	color:black;
 
 }
+.Links2 ul li a{
+	float: left;
+	clear: both;
+	width: 100%;
+	padding-bottom: 30px;
+	display:block;
+	color:black;
+
+}
+
 .Links ul li a:hover{
 	background-color: blue;
 	color:white;
@@ -149,4 +199,9 @@ a.closeLinks.ui-link {
 }
 a.openLinks.ui-link{
 	color:white;
+	text-decoration: none;
+}
+a.openLinks2.ui-link{
+	color:white;
+	text-decoration: none;
 }

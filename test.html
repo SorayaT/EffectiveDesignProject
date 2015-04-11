@@ -20,196 +20,125 @@
     
 <body class="ui-mobile-viewport ui-overlay-c"> 
 
-<!-- Start of first page: #one -->
-<div data role="page" id="one">
+<form class="form-wrapper cf">
+        <input type="text" placeholder="Search here..." required>
+        <button type="submit">Search</button>
+    </form>   
 
-<script type="text/javascript">
-    $(document).ready(function(){
-        $('#menu').('navbar.html');
-    });
-</script>
+    <style>
+.cf:before, .cf:after{
+    content:"";
+    display:table;
+}
+ 
+.cf:after{
+    clear:both;
+}
+ 
+.cf{
+    zoom:1;
+} 
 
-
-        <div class="Links">
-            <ul data-inset="true">
-                <li><a href="#one">Homepage</a></li>
-                <li><a href="#index">Logo</a></li>
-                <li><a href="#two">Genre</a></li>
-                <li><a href="#ByAge">Age</a></li>
-                <li><a href="#two">Test</a></li>
-                <li><a href="" class="closeLinks"><img src="img/close-icon.png" class="closeimg"></a></li>
-
-            </ul>
-        </div>
-                 <div class="Menu">
-    <ul id="menu">
-         <li><a href="" class="openLinks" style="color: white;"><img src="img/menu.bmp" class="openmenu"></a></li>
-
-         <li>
-         <a href="" class="openLinks" style="color: white;"><img src="img/profile_small.png" class="openmenu"></a></li>
-
-
-         <li><a href="" class="openLinks" style="color: white;"><img src="img/Shopping_small.jpg" class="openmenu"></a></li>
-
-    </ul>
-    </div>
-
-           <script>
-        $( ".openLinks" ).click(function(a) {
-            console.log("your message here");
-          $(".Links").show(1000);
-          a.preventDefault();
-        });
-
-        $( ".closeLinks" ).click(function(a) {
-          $(".Links").hide(1000);
-          a.preventDefault();
-        });
-
-        $(".Links").click(function () {
-        $(".Links").hide(1000);
-        });
-    </script>
-
-<img src="img/untitled.png" id="logo"> 
-
-
-</div><!-- /page -->
-
-
-
-<!-- Start of second page: #two -->
-<div data-role="page" id="two" data-theme="a" data-url="two" tabindex="0" class="ui-page ui-body-a" style="min-height: 417px;">
-<div class="Links">
-            <ul data-inset="true">
-                <li><a href="#one">Homepage</a></li>
-                <li><a href="#index">Logo</a></li>
-                <li><a href="#two">Genre</a></li>
-                <li><a href="#ByAge">Age</a></li>
-                <li><a href="#two">Test</a></li>
-                <li><a href="" class="closeLinks"><img src="img/close-icon.png" class="closeimg"></a></li>
-
-            </ul>
-        </div>
-                 <div class="Menu">
-    <ul id="menu">
-         <li><a href="" class="openLinks" style="color: white;"><img src="img/menu.bmp" class="openmenu"></a></li>
-
-         <li>
-         <a href="" class="openLinks" style="color: white;"><img src="img/profile_small.png" class="openmenu"></a></li>
-
-
-         <li><a href="" class="openLinks" style="color: white;"><img src="img/Shopping_small.jpg" class="openmenu"></a></li>
-
-    </ul>
-    </div>
-
-    <script>
-        $( ".openLinks" ).click(function(a) {
-            console.log("your message here");
-          $(".Links").show(1000);
-          a.preventDefault();
-        });
-
-        $( ".closeLinks" ).click(function(a) {
-          $(".Links").hide(1000);
-          a.preventDefault();
-        });
-
-        $(".Links").click(function () {
-        $(".Links").hide(1000);
-        });
-    </script>
-
-
-        <div class="homePreviews">
-            <h2>Featured this month</h2>
-            <div class="game">
-            <img src="http://www.screenshotsaturday.com/images/directlink_CB1K_9YUgAMQGIU.png%3Alarge.png">
-            </div>
-            <div class="game">
-            <img src="http://www.screenshotsaturday.com/images/directlink_CB1D0A8UoAEgbA6.jpg%3Alarge.jpg">
-            </div>
-            <div class="game">
-            <img src="http://www.screenshotsaturday.com/images/directlink_CB0i3rQWIAA0oK8.jpg%3Alarge.jpg">
-            </div>
-            <div class="game">
-            <img src="http://www.screenshotsaturday.com/images/directlink_CB0oHeQW8AAQgjr.png%3Alarge.png">
-            </div>
-            <div class="game">
-            <img src="http://www.screenshotsaturday.com/images/directlink_CBycEIRW0AEUYbs.jpg%3Alarge.jpg">
-            </div>
-            <div class="game">
-            <img src="http://www.screenshotsaturday.com/images/directlink_CByY-epW0AA68SF.png%3Alarge.png">
-            </div>
-        </div>
-        <div class="homePreviews">
-            <h2>Best of Action</h2>
-            <div class="game">
-            <img src="http://www.screenshotsaturday.com/images/directlink_CByYi4qXIAAkSwG.png%3Alarge.png">
-            </div>
-            <div class="game">
-            <img src="http://www.screenshotsaturday.com/images/directlink_CBye4YFUIAACPOx.png%3Alarge.png">
-            </div>
-            <div class="game">
-            <img src="http://www.screenshotsaturday.com/images/directlink_CByhRcrUoAE17tW.png%3Alarge.png">
-            </div>
-        </div>
-         <div class="homePreviews">
-            <h2>Best of Kids Games</h2>
-            <div class="game">
-            <img src="http://www.screenshotsaturday.com/images/directlink_CByRXs8UsAA7dot.png%3Alarge.png">
-            </div>
-            <div class="game">
-            <img src="http://www.screenshotsaturday.com/images/directlink_CByXnU1WEAA39xy.png%3Alarge.png">
-            </div>
-            <div class="game">
-            <img src="http://www.screenshotsaturday.com/images/directlink_CByWji3UsAAp1yJ.png%3Alarge.png">
-            </div>
-        </div>
-         <div class="homePreviews">
-            <h2>Best of Multiplayer</h2>
-            <div class="game">
-            <img src="http://www.screenshotsaturday.com/images/directlink_CByUONFUsAAY8-T.png%3Alarge.png">
-            </div>
-            <div class="game">
-            <img src="http://www.screenshotsaturday.com/images/directlink_CByUkIpUoAAgjGV.png%3Alarge.png">
-            </div>
-            <div class="game">
-            <img src="http://www.screenshotsaturday.com/images/directlink_CByPHpxWEAASSoN.jpg%3Alarge.jpg">
-            </div>
-        </div>
-         <div class="homePreviews">
-            <h2>Best of Puzzles</h2>
-            <div class="game">
-            <img src="http://www.screenshotsaturday.com/images/directlink_CByRgB1XIAAGsA1.png%3Alarge.png">
-            </div>
-            <div class="game">
-            <img src="http://www.screenshotsaturday.com/images/directlink_CByBo4HXIAEdHL6.png%3Alarge.png">
-            </div>
-            <div class="game">
-            <img src="http://www.screenshotsaturday.com/images/directlink_CByCAYBW8AEfwIo.jpg%3Alarge.jpg">
-            </div>
-        </div>
-         <div class="homePreviews">
-            <h2>Best of Horror</h2>
-            <div class="game">
-            <img src="http://www.screenshotsaturday.com/images/directlink_CBx6b4YVEAAPxYX.png%3Alarge.png">
-            </div>
-            <div class="game">
-            <img src="http://www.screenshotsaturday.com/images/directlink_CBx_bOyUgAA66wF.png%3Alarge.png">
-            </div>
-            <div class="game">
-            <img src="http://www.screenshotsaturday.com/images/directlink_CBx2iJpW8AE_6rs.png%3Alarge.png">
-            </div>
-        </div>
+/* Form wrapper styling */
+.form-wrapper {
+    width: 450px;
+    padding: 15px;
+    margin: 150px auto 50px auto;
+    background: #444;
+    background: rgba(0,0,0,.2);
+    border-radius: 10px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
+}
+ 
+/* Form text input */
+ 
+.form-wrapper input {
+    width: 330px;
+    height: 20px;
+    padding: 10px 5px;
+    float: left;    
+    font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    border: 0;
+    background: #eee;
+    border-radius: 3px 0 0 3px;      
+}
+ 
+.form-wrapper input:focus {
+    outline: 0;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+}
+ 
+.form-wrapper input::-webkit-input-placeholder {
+   color: #999;
+   font-weight: normal;
+   font-style: italic;
+}
+ 
+.form-wrapper input:-moz-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}
+ 
+.form-wrapper input:-ms-input-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}    
+ 
+/* Form submit button */
+.form-wrapper button {
+    overflow: visible;
+    position: relative;
+    float: right;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    height: 40px;
+    width: 110px;
+    font: bold 15px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    color: #fff;
+    text-transform: uppercase;
+    background: #d83c3c;
+    border-radius: 0 3px 3px 0;      
+    text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+}   
    
-        
+.form-wrapper button:hover{     
+    background: #e54040;
+}   
+   
+.form-wrapper button:active,
+.form-wrapper button:focus{   
+    background: #c42f2f;
+    outline: 0;   
+}
+ 
+.form-wrapper button:before { /* left arrow */
+    content: '';
+    position: absolute;
+    border-width: 8px 8px 8px 0;
+    border-style: solid solid solid none;
+    border-color: transparent #d83c3c transparent;
+    top: 12px;
+    left: -6px;
+}
+ 
+.form-wrapper button:hover:before{
+    border-right-color: #e54040;
+}
+ 
+.form-wrapper button:focus:before,
+.form-wrapper button:active:before{
+        border-right-color: #c42f2f;
+}      
+ 
+.form-wrapper button::-moz-focus-inner { /* remove extra button spacing for Mozilla Firefox */
+    border: 0;
+    padding: 0;
+} 
+</style>
 
-    
-    <div data-role="footer" class="ui-footer ui-bar-a" role="contentinfo">
-        <h4 class="ui-title" role="heading" aria-level="1">Page Footer</h4>
-    </div><!-- /footer -->
-</div><!-- /page two -->
 
 
