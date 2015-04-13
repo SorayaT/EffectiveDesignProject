@@ -20,14 +20,22 @@ header {
   margin-left: 30px;
 }
 
-.iconWrap img{
-	height: 50px;
+nav {
+	  position: absolute;
+  top: 38px;
+  right: 20px;
 }
 
-.iconWrap {
-	  position: absolute;
-  top: 25px;
-  right: 20px;
+nav a {
+	text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 3px 7px;
+}
+
+nav a:hover {
+	background-color: #fff;
 }
 
 .slider {
@@ -53,9 +61,8 @@ h1, h2 {
 }
 
 .homepageGame {
-  width: 20.5%;
-  padding: 2%;
-  background-color: black;
+  width: 22%;
+  padding: 1%;
   height: 100px;
   display: inline-block;
 }
