@@ -90,3 +90,10 @@ fieldset{
 	margin:auto;
 	width: 60%;
 }
+.game{
+	width:60%;
+	height: 20em;
+	margin:auto;	
+	background-color: #eee;
+	margin-bottom: 20px;
+}
