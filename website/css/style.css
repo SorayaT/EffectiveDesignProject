@@ -66,3 +66,27 @@ h1, h2 {
   height: 100px;
   display: inline-block;
 }
+.paymentForm{
+	width:150px;
+	float: left;
+	/*margin-bottom: 10px;*/
+}
+.formField{
+	margin-bottom: 12px;
+}
+fieldset{
+	width:100%;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+#submit{
+  float: right;
+  height: 3em;
+  width: 6em;
+}
+
+.buyForm{
+	margin:auto;
+	width: 60%;
+}
