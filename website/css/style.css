@@ -34,7 +34,15 @@ margin: 0;
 padding: 0;
 padding-right: 50px;
 text-align: right;
-background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #EEEEEE), color-stop(0.8, #000000));
+background: rgb(238,238,238); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(238,238,238,1) 0%, rgba(0,0,0,1) 80%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(238,238,238,1)), color-stop(80%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(238,238,238,1) 0%,rgba(0,0,0,1) 80%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(238,238,238,1) 0%,rgba(0,0,0,1) 80%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(238,238,238,1) 0%,rgba(0,0,0,1) 80%); /* IE10+ */
+background: linear-gradient(to right,  rgba(238,238,238,1) 0%,rgba(0,0,0,1) 80%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
+
 }
 
 .openmenu {
