@@ -206,6 +206,7 @@ nav a:hover {
 
 section {
 	padding: 50px;
+	overflow: hidden;
 }
 
 h1, h2 {
@@ -330,4 +331,44 @@ float: left;
 
 .buyDelete:hover{
 	background-color: #C0B9B9;
+}
+
+.firstSection {
+	margin-top:100px;
+}
+
+input[type="text"], input[type="password"] {
+	  display: block;
+  border: 3px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  width: 50%;
+  margin: 10px auto;
+}
+
+input[type="submit"] {
+  padding: 10px;
+  background: #ccc;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  width: 52%;
+  cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+.textCenter {
+	text-align: center;
+}
+
+.accountSettings a{
+  width: 50%;
+  float: left;
+  text-align: center;
 }
