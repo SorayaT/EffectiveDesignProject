@@ -6,7 +6,7 @@
          </a>
       <ul id="dropdown">
         <li id="submenu"><a href="index.html">Home Page</a></li>
-        <li id="submenu"><a href="#">Gaming NEWS</a></li>
+        <li id="submenu"><a href="news.html">Gaming NEWS</a></li>
         <li id="submenu"><a href="#">Genre Categories</a></li>
         <li id="submenu"><a href="#">Age Groups</a></li>
         <li id="submenu"><a href="#">Top Rated</a></li>
@@ -28,7 +28,7 @@
          <ul id="dropdown2">
         <li id="submenu"><a href="login.html">Login</a></li>
         <li id="submenu"><a href="#">Register</a></li>
-        <li id="submenu"><a href="#">View Profile</a></li>
+        <li id="submenu"><a href="profile.html">View Profile</a></li>
         <li id="submenu"><a href="#">Developer's Home</a></li>
         <li id="submenu"><a href="#">Log out</a></li>
       </ul>
