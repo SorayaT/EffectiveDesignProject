@@ -238,6 +238,11 @@ fieldset{
 	margin: auto;
 	margin-bottom: 20px;
 }
+.shoppingForm{
+			border-width: 1px;
+background-color: red;
+
+}
 
 #submit{
   float: right;
@@ -333,17 +338,32 @@ float: left;
 	background-color: #C0B9B9;
 }
 
+.proceedDiv{
+	float:right;
+	font-size: 230%;
+	background-color: #eee;
+	padding-right: 2%;
+	padding-left:2%;
+	padding-top: 0.5%;
+	padding-bottom:0.5%;
+	margin-right: 30%
+}
+.proceedDiv:hover{
+		background-color: #C0B9B9;
+
+}
+
 .firstSection {
 	margin-top:100px;
 }
 
-input[type="text"], input[type="password"] {
-	  display: block;
-  border: 3px solid black;
-  border-radius: 5px;
-  padding: 10px;
-  width: 50%;
-  margin: 10px auto;
+.loginInput{
+	display: block;
+	border: 3px solid black;
+	border-radius: 5px;
+	padding: 10px;
+	width: 50%;
+	margin: 10px auto;
 }
 
 input[type="submit"] {
