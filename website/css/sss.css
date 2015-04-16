@@ -16,6 +16,7 @@
 	left: 0;
 	display: none;
 	overflow: hidden;
+	z-index: -1;
 }
 
 .ssslide img {
