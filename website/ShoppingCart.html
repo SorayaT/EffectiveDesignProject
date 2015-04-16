@@ -15,75 +15,8 @@
 	</script>
 	</head>
 <body>
+<?php include("nav.php"); ?>
 
-<header>
-<div class="Menu">
-    <ul id="menu">
-         <li><a href="index.html" data-transition="slidedown" class="openLinks" style="color: white;">
-         <img id="my-img" class="openmenu" src="img/menu2.bmp"/>
-         </a></li>
-         <script>
-
-$("#my-img").hover(function(){
-    $(this).attr("src", function(index, attr){
-        return attr.replace(".bmp", "-hover.bmp");
-    });
-    }, function(){
-    $(this).attr("src", function(index, attr){
-        return attr.replace("-hover.bmp", ".bmp");
-    });
-});
-</script>
-
-         <script>
-         /*
-function hover(element) {
-    element.setAttribute('src', 'img/menu2-hover.bmp');
-}
-function unhover(element) {
-    element.setAttribute('src', 'img/menu2.bmp');
-}
-*/
-
-</script>
-
-         <li><a href="" class="openLinks" style="color: white;">
-         <img id="my-img2" src="img/profile.png" class="openmenu"/>
-         </a></li>
-       <script>
-
-$("#my-img2").hover(function(){
-    $(this).attr("src", function(index, attr){
-        return attr.replace(".png", "-hover.png");
-    });
-    }, function(){
-    $(this).attr("src", function(index, attr){
-        return attr.replace("-hover.png", ".png");
-    });
-});
-</script>
-
-
-         <li><a href="ShoppingCart.html" class="openLinks" style="color: white;">
-         <img id="my-img3" src="img/Shopping.jpg" class="openmenu">
-         </a></li>
-<script>
-
-$("#my-img3").hover(function(){
-    $(this).attr("src", function(index, attr){
-        return attr.replace(".jpg", "-hover.jpg");
-    });
-    }, function(){
-    $(this).attr("src", function(index, attr){
-        return attr.replace("-hover.jpg", ".jpg");
-    });
-});
-</script>
-
-    </ul>
-    </div>
-
-</header>
 
 
 <section class="shoppingCart">
