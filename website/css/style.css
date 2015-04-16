@@ -86,7 +86,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', end
 	}
 
 .flip-container, .front, .back {
-	width: 320px;
+	width: 100px;
 	position: absolute;
     top: 0;
     left: 0;
