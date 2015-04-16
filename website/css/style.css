@@ -507,4 +507,20 @@ float: left;
 }
 .gameBuyLink{
 	float: right;
+	width:3em;
+	text-align: center;
+	background-color: #3498DB;
+	  padding-right: 4%;
+  padding-left: 4%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+	}
+.gameDetailsLink{
+  width: 3em;
+  text-align: center;
+	background-color: #3498DB;
+	  padding-right: 4%;
+  padding-left: 4%;
+  padding-top: 1%;
+  padding-bottom: 1%;
 	}

@@ -27,7 +27,7 @@
          </a>
          <ul id="dropdown2">
         <li id="submenu"><a href="login.html">Login</a></li>
-        <li id="submenu"><a href="#">Register</a></li>
+        <li id="submenu"><a href="registerForm.html">Register</a></li>
         <li id="submenu"><a href="profile.html">View Profile</a></li>
         <li id="submenu"><a href="#">Developer's Home</a></li>
         <li id="submenu"><a href="#">Log out</a></li>
