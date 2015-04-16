@@ -1,16 +1,13 @@
-.swiper-container {
-        width: 100%;
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-    .swiper-slide {
-        background-position: center;
-        background-size: cover;
-        width: 300px;
-        height: 300px;
+.swiper-container h1{
 
-    }
-
+  font-size: 25pt;
+  margin-top:70px;
+  text-align: center;
+  margin: 200px auto;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  text-shadow: -3px 2px 3px rgba(152, 150, 196, 1);
+}
 
 html {
 overflow: -moz-scrollbars-vertical; 
@@ -26,7 +23,7 @@ overflow-y: scroll;
 	right:225px;
 	position:absolute;
 	visibility: hidden;
-	z-index: 999;
+	z-index: 1000;
 	max-width: 300px;
 
 }
@@ -36,7 +33,7 @@ overflow-y: scroll;
 	right:145px;
 	position:absolute;
 	visibility: hidden;
-	z-index: 999;
+	z-index: 1000;
 	max-width: 300px;
 
 }
@@ -46,7 +43,7 @@ overflow-y: scroll;
 	right:60px;
 	position:absolute;
 	visibility: hidden;
-	z-index: 999;
+	z-index: 1000;
 	max-width: 300px;
 
 }
