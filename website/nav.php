@@ -42,7 +42,6 @@
          </a>
          <ul id="dropdown3">
         <li id="submenu"><a href="ShoppingCart.html">Shopping Cart</a></li>
-        <li id="submenu"><a href="BuyingForm.html">Buying Form</a></li>
         <li id="submenu"><a href="#">Check out</a></li>
         <li id="submenu"><a href="#">Submit Donation</a></li>
       </ul>

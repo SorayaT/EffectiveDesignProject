@@ -319,7 +319,7 @@ h1, h2 {
 }
 
 .homepageGame {
-  width: 22%;
+  width: 100%;
   padding: 1%;
   height: 100px;
   display: inline-block;
@@ -496,3 +496,15 @@ a {
   float: left;
   text-align: center;
 }
+.homepageFeatured{
+display: inline-block;
+float: left;
+  width: 20%;
+  padding-right: 2%;
+  padding-left: 2%;
+  padding-bottom: 1%;
+  margin:auto;
+}
+.gameBuyLink{
+	float: right;
+	}
