@@ -1,0 +1,580 @@
+
+
+.swiper-container h1{
+
+  font-size: 25pt;
+  margin-top:70px;
+  text-align: center;
+  margin: 200px auto;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  text-shadow: -3px 2px 3px rgba(152, 150, 196, 1);
+}
+
+html {
+overflow: -moz-scrollbars-vertical; 
+overflow-y: scroll;
+}
+
+#submenu {
+	display: inline-block;
+
+}
+#dropdown {
+	top: 55px;
+	right:225px;
+	position:absolute;
+	visibility: hidden;
+	z-index: 1000;
+	max-width: 300px;
+
+}
+
+#dropdown2 {
+	top: 55px;
+	right:145px;
+	position:absolute;
+	visibility: hidden;
+	z-index: 1000;
+	max-width: 300px;
+
+}
+
+#dropdown3 {
+	top: 55px;
+	right:60px;
+	position:absolute;
+	visibility: hidden;
+	z-index: 1000;
+	max-width: 300px;
+
+}
+
+#dropdown li, #dropdown2 li, #dropdown3 li {
+  color: #fff;
+  background: #3498DB;
+  display: block;
+  float: left;
+  padding: 12px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  clear: left;
+  float:right;
+  min-width: 295px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  -webkit-box-shadow: -10px 9px 37px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: -10px 9px 37px -3px rgba(0,0,0,0.75);
+box-shadow: -10px 9px 37px -3px rgba(0,0,0,0.75);
+}
+#dropdown li {
+
+}
+
+
+#dropdown li:hover, #dropdown2 li:hover, #dropdown3 li:hover {
+	/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(left, #FFFFFF 0%, #3498DB 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(left, #FFFFFF 0%, #3498DB 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(left, #FFFFFF 0%, #3498DB 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #FFFFFF), color-stop(1, #3498DB));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(left, #FFFFFF 0%, #3498DB 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to right, #FFFFFF 0%, #3498DB 100%);
+}
+#dropdown li:active {
+
+}
+
+
+
+#Menu {
+display: block;
+}
+
+.top,.top2, .top3{
+	    display: inline;
+        margin: 0 10px;
+        list-style: none;
+	    background-color: black;
+        
+    }
+
+
+li.top:hover #dropdown {
+          visibility: visible;
+        }
+
+li.top2:hover #dropdown2 {
+          visibility: visible;
+        }
+li.top3:hover #dropdown3 {
+          visibility: visible;
+        }
+
+
+
+
+
+a.openLinks.ui-link{
+	color:white;
+	text-decoration: none;
+}
+
+
+
+
+.Menu li a{
+	text-decoration: none;
+	color: white;
+}
+
+ul#menu {
+list-style: none outside none;
+margin: 0;
+padding: 0;
+padding-right: 50px;
+text-align: right;
+background: rgb(238,238,238); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(238,238,238,1) 0%, rgba(0,0,0,1) 80%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(238,238,238,1)), color-stop(80%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(238,238,238,1) 0%,rgba(0,0,0,1) 80%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(238,238,238,1) 0%,rgba(0,0,0,1) 80%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(238,238,238,1) 0%,rgba(0,0,0,1) 80%); /* IE10+ */
+background: linear-gradient(to right,  rgba(238,238,238,1) 0%,rgba(0,0,0,1) 80%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
+
+}
+
+.openmenu {
+	padding-left: 10px;
+	height:50px;
+	max-width:50px;
+
+}
+
+#logo {
+	z-index: 999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Flip /*
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 100px;
+	position: absolute;
+    top: 0;
+    left: 0;
+    z-index:99;
+
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+	padding:0;
+	margin:0;
+	font-family: 'Open Sans', sans-serif; 
+	font-weight: 300;
+}
+
+header {
+	top: 0;
+	background: #eee;
+	position: fixed;
+	width: 100%;
+	height: 100px;
+}
+
+.logo {
+	font-weight: 500;
+  font-size: 30px;
+  margin-left: 30px;
+}
+
+nav {
+	  position: absolute;
+  top: 38px;
+  right: 20px;
+}
+
+nav a {
+	text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 3px 7px;
+}
+
+nav a:hover {
+	background-color: #fff;
+}
+
+.slider {
+	margin-top: 100px;
+	z-index: -1;
+}
+
+.slider img {
+	height: 500px;
+}
+
+section {
+	padding: 50px;
+	overflow: hidden;
+}
+
+h1, h2 {
+	font-weight: 400;
+  font-size: 28px;
+  text-align: center;
+}
+
+.altSection {
+	background-color: #eee;
+}
+
+.homepageGame {
+  width: 100%;
+  padding: 1%;
+  height: 100px;
+  display: inline-block;
+}
+.paymentForm{
+	width:150px;
+	float: left;
+	/*margin-bottom: 10px;*/
+}
+.formField{
+	margin-bottom: 12px;
+}
+fieldset{
+	width:100%;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+#submit{
+  float: right;
+  height: 3em;
+  width: 6em;
+}
+
+.buyForm{
+	margin:auto;
+	width: 60%;
+}
+.game{
+	width:70%;
+	height: 100%;
+	margin:auto;
+	padding:2%;	padding-top: 0;
+
+	background-color: #eee;
+	margin-bottom: 20px;
+	overflow: auto;
+}
+.gameImg{
+	width:40%;
+	background-color: white;
+	clear: left;
+	float: left;
+	margin-left: 4%;
+	margin-top:5%;
+}
+.checkbox{
+	float: right;
+	margin:1%;
+}
+.gamePrice{
+float: left;
+  margin-left: 16%;
+  font-size: 270%;
+  width: 30%;
+  text-align: center;
+}
+.descGamePrice{
+float: left;
+  margin-left: 10%;
+  font-size: 270%;
+  width: 30%;
+  text-align: center;
+}
+.price{
+	margin: 0;
+}
+
+img{
+	width: 100%
+}
+.gameDesc{
+	margin-top: 3%;
+	float: left;
+	width: 55%;
+	margin-right: 3%;
+
+}
+.descGameDesc{
+	clear: left;
+	margin-top: 8%;
+}
+.gameTitle{
+float: left;
+  font-size: 300%;
+  margin-left: 16%;
+  width: 30%;
+}
+
+.descGameTitle{
+float: left;
+  font-size: 300%;
+  width: 30%;
+  margin:4% 0 0 10%;
+}
+.buyButton{
+  float: left;
+  margin-left: 12%;
+  text-align: center;
+  margin-top: 4%;
+  padding-right: 2%;
+  padding-left: 2%;
+  /* padding-top: 0; */
+  padding-bottom: 1%;
+  font-size: 230%;
+  text-decoration: none;
+  color:black;
+}
+.buyButton{
+  float: left;
+  margin-left: 12%;
+  text-align: center;
+  margin-top: 4%;
+  padding-right: 2%;
+  padding-left: 2%;
+  /* padding-top: 0; */
+  padding-bottom: 1%;
+  font-size: 230%;
+  text-decoration: none;
+  color:black;
+}
+.descBuyButton{
+  margin-left: 20%;
+  text-align: center;
+  margin-top: 4%;
+  padding-right: 2%;
+  padding-left: 2%;
+  /* padding-top: 0; */
+  padding-bottom: 1%;
+  font-size: 230%;
+  text-decoration: none;
+  color:black;
+}
+.buyButton:hover{
+	background-color: #C0B9B9;
+}
+.buyDelete{
+  float: left;
+  margin-left: 10%;
+  text-align: center;
+  margin-top: 5%;
+  padding-right: 2%;
+  padding-left: 2%;
+  /* padding-top: 0; */
+  padding-bottom: 1%;
+  font-size: 230%;
+  text-decoration: none;
+  color:black;
+}
+
+.buyDelete:hover{
+	background-color: #C0B9B9;
+}
+.proceedDiv{
+	float:right;
+	font-size: 230%;
+	background-color: #ccc;
+	padding-right: 2%;
+	padding-left:2%;
+	padding-top: 0.5%;
+	padding-bottom:0.5%;
+	margin-right: 15%
+}
+.firstSection {
+	margin-top:100px;
+}
+
+.loginInput{
+	display: block;
+	border: 3px solid black;
+	border-radius: 5px;
+	padding: 10px;
+	width: 50%;
+	margin: 10px auto;
+}
+
+input[type="submit"] {
+  padding: 10px;
+  background: #ccc;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  width: 52%;
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  padding: 10px;
+  background: #ccc;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  width: 52%;
+  cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+.textCenter {
+	text-align: center;
+}
+
+.accountSettings a{
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+.homepageFeatured{
+display: inline-block;
+float: left;
+  width: 20%;
+  padding-right: 2%;
+  padding-left: 2%;
+  padding-bottom: 1%;
+  margin:auto;
+}
+.gameBuyLink{
+	float: right;
+	width:3em;
+	text-align: center;
+	background-color: #3498DB;
+	  padding-right: 4%;
+  padding-left: 4%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+	}
+.gameDetailsLink{
+  width: 3em;
+  text-align: center;
+	background-color: #3498DB;
+	  padding-right: 4%;
+  padding-left: 4%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+	}
+	footer{
+		text-align: center;
+	}

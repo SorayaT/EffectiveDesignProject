@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Indie Games Sheffield</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+	<link href='css/style.css' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/sss.css" type="text/css" media="all">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="js/sss.min.js"></script>
+	<meta name="viewport" content="width=devide-width, inital-scale-1">
+		<script>
+	jQuery(function($) {
+	$('.slider').sss();
+	});
+	</script>
+	</head>
+<body>
+
+<?php include("nav.php"); ?>
+
+
+<section class="buyForm">
+
+<h2 style="display:block; margin-top:7%;">Buy</h2>
+
+<form>
+<fieldset>
+<legend>Personal Details</legend>
+<div class="formField"><label class="paymentForm">Name: </label><input type="text" name="firstName" placeholder="Name" required></div>
+<div class="formField"><label class="paymentForm">Surname: </label><input type="text" name="surname" placeholder="Surname" required></div>
+<div class="formField"><label class="paymentForm">Email: </label><input type="text" name="email" placeholder="Email"></div>
+<div class="formField"><label class="paymentForm">1st Line Address: </label><input type="text" name="address1" placeholder="Adress 1" required></div>
+<div class="formField"><label class="paymentForm">2nd Line Address: </label><input type="text" name="address2" placeholder="Address 2"></div>
+<div class="formField"><label class="paymentForm">Town: </label><input type="text" name="town" placeholder="Town" required></div>
+<div class="formField"><label class="paymentForm">Postcode: </label><input type="text" name="postcode" placeholder="Postcode" required></div>
+</fieldset>
+
+<fieldset>
+	<legend>Bank details</legend>
+		<div class="formField"><label class="paymentForm">Card Type: </label><select name="cardPayment">
+			<option value="visa">Visa Debit/Credit</option>
+			<option value="master">MasterCard</op>tion>
+			<option value="maestro">Maestro</option>
+			<option value="electron">Electron</option>
+			</select> </div>
+		<secton class="formField"><label class="paymentForm">Card Number: </label><input type="text" name="cardNo" placeholder="Card Number" required></div>
+		<div class="formField"><label class="paymentForm">Name on the card: </label><input type="text" name="cardName" placeholder="Name on the card" required></div>
+		<div class="formField"><label class="paymentForm">Security Code: </label><input type="text" name="securityCode" placeholder="Enter the last three numbers from the signature strip."></div>
+		<div class="formField"><label class="paymentForm">Expiry Date: </label><input type="date" name="expiryDate"></div>
+</fieldset>
+<input type="submit" id="submit" value="Confirm">
+</form>
+
+</section>
+<?php include("footer.php"); ?>
+
+
+</body>
+</html>

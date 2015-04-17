@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Indie Games Sheffield</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+	<link href='css/style.css' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/sss.css" type="text/css" media="all">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="js/sss.min.js"></script>
+	<meta name="viewport" content="width=devide-width, inital-scale-1">
+		<script>
+	jQuery(function($) {
+	$('.slider').sss();
+	});
+	</script>
+	</head>
+<body>
+
+<?php include("nav.php"); ?>
+
+<section class="firstSection">
+
+<h1>Sign in to your account to buy games!</h1>
+<a href="register.html"><p class="textCenter">Don't have an account? Click here to register!</p></a>
+
+<form action="loginResult.html">
+
+<input type="text" class="loginInput" placeholder="Enter your Username">
+<input type="password" class="loginInput" placeholder="Enter your Password">
+<input type="submit" value="Sign In">
+
+</form>
+
+</section>
+<?php include("footer.php"); ?>
+
+
+</body>
+</html>

@@ -1,162 +1,395 @@
-<!DOCTYPE html> 
-<html class="ui-mobile">
+
+<!DOCTYPE html>
+<html>
 <head>
 
-	<title>Page Title</title> 
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>Page Title</title> 
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
 
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
-	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>
-	
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
 
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>
+    <link rel="stylesheet" href="dist/css/swiper.min.css">
 
     <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 300px;
+        margin: 10px auto;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    .swiper-slide:nth-child(2n) {
+        width: 90%;
+    }
+    .swiper-slide:nth-child(3n) {
+        width: 60%;
+    }
+    </style>
    
    
 </head> 
 
+    
 <body> 
 
+<!-- Start of first page: #one -->
+<div data role="page" id="home" >
+
+<div data-role="content">
+
+        <div class="Links">
+            <ul data-inset="true">
+                <li><a href="#home" data-transition="flip">Homepage</a></li>
+                <li><a href="#news">Gaming NEWS</a></li>
+                <li><a href="#search">Search Games</a></li>
+                <li><a href="#genre" data-transition="flip">Games Genre List</a></li>
+                <li><a href="#ByAge">Games by Age</a></li>
+                <li><a href="#rated">Top Rated</a></li>
+                <li><a href="#featured">Featured Games</a></li>
+                <li><a href="#new">NEW Additions</a></li>
+                <li><a href="#about">About US</a></li>
+                <li><a href="#contact">Contact US</a></li>
+                <li><a href="" class="closeLinks" data-transition="slideup"><img src="img/close-icon.png" class="closeimg"></a></li>
+
+            </ul>
+        </div>
+
+        <div class="Links2">
+            <ul data-inset="true">
+                <li><a href="#login">Login</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#profile">View Profile</a></li>
+                <li><a href="#dev">Developer's Home</a></li>
+                <li><a href="#forum">Forum</a></li>
+                <li><a href="" class="closeLinks"><img src="img/close-icon.png" class="closeimg"></a></li>
+
+            </ul>
+        </div>
+
+                 <div class="Menu">
+    <ul id="menu">
+         <li><a href="" data-transition="slidedown" class="openLinks" style="color: white;"><img src="img/menu.bmp" class="openmenu"></a></li>
+
+         <li>
+         <a href="" class="openLinks2" style="color: white;"><img src="img/profile_small.png" class="openmenu"></a></li>
 
 
-<div data role="page" id="home">
-
-
- 		<div class="Links">
- 			<ul data-inset="true">
- 				<li><a href="#Home">Homepage</a></li>
- 				<li><a href="#index">Logo</a></li>
- 				<li><a href="#ByGenre">Genre</a></li>
-				<li><a href="#ByAge">Age</a></li>
-				<li><a href="#two">Test</a></li>
-				<li><a href="" class="closeLinks"><img src="img/close-icon.png" class="closeimg"></a></li>
-
- 			</ul>
- 		</div>
- 				 <div class="Menu">
- 	<ul id="menu">
-		 <li><a href="" class="openLinks" style="color: white;"><img src="img/menu.bmp" class="openmenu"></a></li>
-
-		 <li>
-         <a href="" class="openLinks" style="color: white;"><img src="img/profile_small.png" class="openmenu"></a></li>
-
-
-		 <li><a href="" class="openLinks" style="color: white;"><img src="img/Shopping_small.jpg" class="openmenu"></a></li>
+         <li><a href="" class="openLinks" style="color: white;"><img src="img/Shopping_small.jpg" class="openmenu"></a></li>
 
     </ul>
     </div>
 
-    	<script>
+           <script>
         $( ".openLinks" ).click(function(a) {
-        	console.log("your message here");
+            console.log("your message here");
           $(".Links").show(1000);
           a.preventDefault();
         });
+
+        $( ".openLinks2" ).click(function(a) {
+            console.log("your message here");
+          $(".Links2").show(1000);
+          a.preventDefault();
+        });
+
+
+
+        $( ".closeLinks" ).click(function(a) {
+          $(".Links").slideUp(1000);
+          a.preventDefault();
+        });
+
+        $( ".closeLinks2" ).click(function(a) {
+          $(".Links2").slideUp(1000);
+          a.preventDefault();
+        });
+
+        $(".Links").click(function () {
+        $(".Links").slideUp(1000);
+        });
+
+        $(".Links2").click(function () {
+        $(".Links2").slideUp(1000);
+        });
+
+
+    </script>
+<style>
+</style>
+<img src="img/untitled.png" id="logo" width="20%"> 
+<h2 style="display: inline-block; padding:2%; margin: 0px;"> New Arrivals</h2>
+
+<script>
+$("#logo").on('click', function() {
+  $(this).toggleClass('rotate');
+});
+
+</script>
+
+<input id="search" data-type="search" placeholder="Search for games..">
+<!-- SLIDERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR -->
+<!-- Swiper -->
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+            <div class="swiper-slide">Slide 10</div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="dist/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        paginationClickable: true,
+        spaceBetween: 30
+    });
+    </script>
+
+<h2 style="display: inline-block; padding:2%; margin: 0px;"> NEWS Highlights</h2>
+
+<div class="box effect7">
+
+<div class="boxtitle effect7">
+<h4 style="margin-left: 10px; margin-top: 0px; margin-bottom: 0px;   padding-top: 5px; font-size: medium; text-shadow: none;">There are many variations</h4>
+</div>
+<p style= "margin-left: 10px;" >
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+</div>
+<br>
+
+<div class="box effect7">
+<div class="boxtitle effect7">
+<h4 style="margin-left: 10px; margin-top: 0px; margin-bottom: 0px;   padding-top: 5px; font-size: medium; text-shadow: none;">1914 translation by H. Rackham</h4>
+</div>
+<p style= "margin-left: 10px;" >
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</p>
+</div>
+
+
+
+</div>
+</div><!-- /page -->
+
+
+
+<!-- Start of second page: #two -->
+<div data-role="page" id="genre" data-theme="a" data-url="two" tabindex="0" class="ui-page ui-body-a" style="z-index: 99;">
+<div class="Links">
+            <ul data-inset="true">
+                <li><a href="#home">Homepage</a></li>
+                <li><a href="#news">Gaming NEWS</a></li>
+                <li><a href="#search">Search Games</a></li>
+                <li><a href="#genre">Games Genre List</a></li>
+                <li><a href="#ByAge">Games by Age</a></li>
+                <li><a href="#rated">Top Rated</a></li>
+                <li><a href="#featured">Featured Games</a></li>
+                <li><a href="#new">NEW Additions</a></li>
+                <li><a href="#about">About US</a></li>
+                <li><a href="#contact">Contact US</a></li>
+                <li><a href="" class="closeLinks"><img src="img/close-icon.png" class="closeimg"></a></li>
+
+            </ul>
+        </div>
+
+        <div class="Links2">
+            <ul data-inset="true">
+                <li><a href="#login">Login</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#profile">View Profile</a></li>
+                <li><a href="#dev">Developer's Home</a></li>
+                <li><a href="#forum">Forum</a></li>
+                <li><a href="" class="closeLinks"><img src="img/close-icon.png" class="closeimg"></a></li>
+
+            </ul>
+        </div>
+
+                 <div class="Menu">
+    <ul id="menu">
+         <li><a href="" class="openLinks" style="color: white;"><img src="img/menu.bmp" class="openmenu"></a></li>
+
+         <li>
+         <a href="" class="openLinks2" style="color: white;"><img src="img/profile_small.png" class="openmenu"></a></li>
+
+
+         <li><a href="" style="color: white;"><img src="img/Shopping_small.jpg" class="openmenu"></a></li>
+
+    </ul>
+    </div>
+
+    <script>
+        $( ".openLinks" ).click(function(a) {
+            console.log("your message here");
+          $(".Links").show(1000);
+          a.preventDefault();
+        });
+
+        $( ".openLinks2" ).click(function(a) {
+            console.log("your message here");
+          $(".Links2").show(1000);
+          a.preventDefault();
+        });
+
+
 
         $( ".closeLinks" ).click(function(a) {
           $(".Links").hide(1000);
           a.preventDefault();
         });
-	</script>
 
-<img src="img/logo4.png" id="logo"> 
+        $( ".closeLinks2" ).click(function(a) {
+          $(".Links2").hide(1000);
+          a.preventDefault();
+        });
 
- 		<div class="homePreviews">
- 			<h2>Featured this month</h2>
- 			<div class="game">
- 			<img src="http://www.screenshotsaturday.com/images/directlink_CB1K_9YUgAMQGIU.png%3Alarge.png">
- 			</div>
- 			<div class="game">
- 			<img src="http://www.screenshotsaturday.com/images/directlink_CB1D0A8UoAEgbA6.jpg%3Alarge.jpg">
- 			</div>
- 			<div class="game">
- 			<img src="http://www.screenshotsaturday.com/images/directlink_CB0i3rQWIAA0oK8.jpg%3Alarge.jpg">
- 			</div>
- 			<div class="game">
- 			<img src="http://www.screenshotsaturday.com/images/directlink_CB0oHeQW8AAQgjr.png%3Alarge.png">
- 			</div>
- 			<div class="game">
- 			<img src="http://www.screenshotsaturday.com/images/directlink_CBycEIRW0AEUYbs.jpg%3Alarge.jpg">
- 			</div>
- 			<div class="game">
- 			<img src="http://www.screenshotsaturday.com/images/directlink_CByY-epW0AA68SF.png%3Alarge.png">
- 			</div>
- 		</div>
- 		<div class="homePreviews">
- 			<h2>Best of Action</h2>
- 			<div class="game">
- 			<img src="http://www.screenshotsaturday.com/images/directlink_CByYi4qXIAAkSwG.png%3Alarge.png">
- 			</div>
- 			<div class="game">
- 			<img src="http://www.screenshotsaturday.com/images/directlink_CBye4YFUIAACPOx.png%3Alarge.png">
- 			</div>
- 			<div class="game">
- 			<img src="http://www.screenshotsaturday.com/images/directlink_CByhRcrUoAE17tW.png%3Alarge.png">
- 			</div>
- 		</div>
- 		 <div class="homePreviews">
- 			<h2>Best of Kids Games</h2>
- 			<div class="game">
- 			<img src="http://www.screenshotsaturday.com/images/directlink_CByRXs8UsAA7dot.png%3Alarge.png">
- 			</div>
- 			<div class="game">
- 			<img src="http://www.screenshotsaturday.com/images/directlink_CByXnU1WEAA39xy.png%3Alarge.png">
- 			</div>
- 			<div class="game">
- 			<img src="http://www.screenshotsaturday.com/images/directlink_CByWji3UsAAp1yJ.png%3Alarge.png">
- 			</div>
- 		</div>
- 		 <div class="homePreviews">
- 			<h2>Best of Multiplayer</h2>
- 			<div class="game">
- 			<img src="http://www.screenshotsaturday.com/images/directlink_CByUONFUsAAY8-T.png%3Alarge.png">
- 			</div>
- 			<div class="game">
- 			<img src="http://www.screenshotsaturday.com/images/directlink_CByUkIpUoAAgjGV.png%3Alarge.png">
- 			</div>
- 			<div class="game">
- 			<img src="http://www.screenshotsaturday.com/images/directlink_CByPHpxWEAASSoN.jpg%3Alarge.jpg">
- 			</div>
- 		</div>
- 		 <div class="homePreviews">
- 			<h2>Best of Puzzles</h2>
- 			<div class="game">
- 			<img src="http://www.screenshotsaturday.com/images/directlink_CByRgB1XIAAGsA1.png%3Alarge.png">
- 			</div>
- 			<div class="game">
- 			<img src="http://www.screenshotsaturday.com/images/directlink_CByBo4HXIAEdHL6.png%3Alarge.png">
- 			</div>
- 			<div class="game">
- 			<img src="http://www.screenshotsaturday.com/images/directlink_CByCAYBW8AEfwIo.jpg%3Alarge.jpg">
- 			</div>
- 		</div>
- 		 <div class="homePreviews">
- 			<h2>Best of Horror</h2>
- 			<div class="game">
- 			<img src="http://www.screenshotsaturday.com/images/directlink_CBx6b4YVEAAPxYX.png%3Alarge.png">
- 			</div>
- 			<div class="game">
- 			<img src="http://www.screenshotsaturday.com/images/directlink_CBx_bOyUgAA66wF.png%3Alarge.png">
- 			</div>
- 			<div class="game">
- 			<img src="http://www.screenshotsaturday.com/images/directlink_CBx2iJpW8AE_6rs.png%3Alarge.png">
- 			</div>
- 		</div>
+        $(".Links").click(function () {
+        $(".Links").hide(1000);
+        });
 
- 	</div><!-- /page -->
+        $(".Links2").click(function () {
+        $(".Links2").hide(1000);
+        });
 
 
+    </script>
 
-<!--
-<div id="two" data-role="page">
-<img src="img/logo.png"> 
 
--->
+        <div class="homePreviews">
+            <h2>Featured this month</h2>
+            <div class="game">
+            <img src="http://www.screenshotsaturday.com/images/directlink_CB1K_9YUgAMQGIU.png%3Alarge.png">
+            </div>
+            <div class="game">
+            <img src="http://www.screenshotsaturday.com/images/directlink_CB1D0A8UoAEgbA6.jpg%3Alarge.jpg">
+            </div>
+            <div class="game">
+            <img src="http://www.screenshotsaturday.com/images/directlink_CB0i3rQWIAA0oK8.jpg%3Alarge.jpg">
+            </div>
+            <div class="game">
+            <img src="http://www.screenshotsaturday.com/images/directlink_CB0oHeQW8AAQgjr.png%3Alarge.png">
+            </div>
+            <div class="game">
+            <img src="http://www.screenshotsaturday.com/images/directlink_CBycEIRW0AEUYbs.jpg%3Alarge.jpg">
+            </div>
+            <div class="game">
+            <img src="http://www.screenshotsaturday.com/images/directlink_CByY-epW0AA68SF.png%3Alarge.png">
+            </div>
+        </div>
+        <div class="homePreviews">
+            <h2>Best of Action</h2>
+            <div class="game">
+            <img src="http://www.screenshotsaturday.com/images/directlink_CByYi4qXIAAkSwG.png%3Alarge.png">
+            </div>
+            <div class="game">
+            <img src="http://www.screenshotsaturday.com/images/directlink_CBye4YFUIAACPOx.png%3Alarge.png">
+            </div>
+            <div class="game">
+            <img src="http://www.screenshotsaturday.com/images/directlink_CByhRcrUoAE17tW.png%3Alarge.png">
+            </div>
+        </div>
+         <div class="homePreviews">
+            <h2>Best of Kids Games</h2>
+            <div class="game">
+            <img src="http://www.screenshotsaturday.com/images/directlink_CByRXs8UsAA7dot.png%3Alarge.png">
+            </div>
+            <div class="game">
+            <img src="http://www.screenshotsaturday.com/images/directlink_CByXnU1WEAA39xy.png%3Alarge.png">
+            </div>
+            <div class="game">
+            <img src="http://www.screenshotsaturday.com/images/directlink_CByWji3UsAAp1yJ.png%3Alarge.png">
+            </div>
+        </div>
+         <div class="homePreviews">
+            <h2>Best of Multiplayer</h2>
+            <div class="game">
+            <img src="http://www.screenshotsaturday.com/images/directlink_CByUONFUsAAY8-T.png%3Alarge.png">
+            </div>
+            <div class="game">
+            <img src="http://www.screenshotsaturday.com/images/directlink_CByUkIpUoAAgjGV.png%3Alarge.png">
+            </div>
+            <div class="game">
+            <img src="http://www.screenshotsaturday.com/images/directlink_CByPHpxWEAASSoN.jpg%3Alarge.jpg">
+            </div>
+        </div>
+         <div class="homePreviews">
+            <h2>Best of Puzzles</h2>
+            <div class="game">
+            <img src="http://www.screenshotsaturday.com/images/directlink_CByRgB1XIAAGsA1.png%3Alarge.png">
+            </div>
+            <div class="game">
+            <img src="http://www.screenshotsaturday.com/images/directlink_CByBo4HXIAEdHL6.png%3Alarge.png">
+            </div>
+            <div class="game">
+            <img src="http://www.screenshotsaturday.com/images/directlink_CByCAYBW8AEfwIo.jpg%3Alarge.jpg">
+            </div>
+        </div>
+         <div class="homePreviews">
+            <h2>Best of Horror</h2>
+            <div class="game">
+            <img src="http://www.screenshotsaturday.com/images/directlink_CBx6b4YVEAAPxYX.png%3Alarge.png">
+            </div>
+            <div class="game">
+            <img src="http://www.screenshotsaturday.com/images/directlink_CBx_bOyUgAA66wF.png%3Alarge.png">
+            </div>
+            <div class="game">
+            <img src="http://www.screenshotsaturday.com/images/directlink_CBx2iJpW8AE_6rs.png%3Alarge.png">
+            </div>
+        </div>
+   
+        
 
+    
+    <div data-role="footer" class="ui-footer ui-bar-a" role="contentinfo">
+        <h4 class="ui-title" role="heading" aria-level="1">Page Footer</h4>
+    </div><!-- /footer -->
+</div><!-- /page two -->
 
 </body>
-
 </html>
+
 
