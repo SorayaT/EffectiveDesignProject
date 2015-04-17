@@ -1,6 +1,43 @@
 
 <!DOCTYPE html>
 <head>
+<style>
+/*==================================================
+ * Effect 7
+ * ===============================================*/
+.effect7
+{
+    position:relative;       
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.effect7:before, .effect7:after
+{
+    content:"";
+    position:absolute; 
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:0;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+} 
+.effect7:after
+{
+    right:10px; 
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg); 
+       -moz-transform:skew(8deg) rotate(3deg);     
+        -ms-transform:skew(8deg) rotate(3deg);     
+         -o-transform:skew(8deg) rotate(3deg); 
+            transform:skew(8deg) rotate(3deg);
+}
+</style>
 
     <title>Page Title</title> 
     
@@ -15,9 +52,32 @@
 </head> 
 
     
-<body class="ui-mobile-viewport ui-overlay-c"> 
+<body> 
 
 
 <div class="box effect7">
     <h3>Effect 7</h3>
 </div>
+<br>
+
+<div class="box effect7">
+
+<div class="boxtitle effect7">
+<h4 style="margin-left: 10px; margin-top: 0px; margin-bottom: 0px;   padding-top: 5px; font-size: medium; text-shadow: none;">There are many variations</h4>
+</div>
+<p style= "margin-left: 10px;" >
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+</div>
+<br>
+
+<div class="box effect7">
+<div class="boxtitle effect7">
+<h4 style="margin-left: 10px; margin-top: 0px; margin-bottom: 0px;   padding-top: 5px; font-size: medium; text-shadow: none;">1914 translation by H. Rackham</h4>
+</div>
+<p style= "margin-left: 10px;" >
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</p>
+</div>
+
+
+</body>
+</html>

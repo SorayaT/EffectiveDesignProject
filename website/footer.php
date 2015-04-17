@@ -44,4 +44,7 @@ footer {
   height: 100px;
   width: 100%;
   }
+  p.footer-company-name {
+  	
+  }
   </style>
